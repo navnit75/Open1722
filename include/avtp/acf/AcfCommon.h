@@ -119,7 +119,7 @@ static inline uint64_t Avtp_AcfCommon_GetField(const Avtp_AcfCommon_t* const pdu
  * @returns Returns the ACF message type field of the PDU.
  */
 static inline Avtp_AcfMsgType_t Avtp_AcfCommon_GetAcfMsgType(const Avtp_AcfCommon_t* const pdu) {
-    return GET_ACF_COMMON_FIELD(AVTP_ACF_FIELD_ACF_MSG_TYPE);
+    return (Avtp_AcfMsgType_t)GET_ACF_COMMON_FIELD(AVTP_ACF_FIELD_ACF_MSG_TYPE);
 }
 
 /** 
